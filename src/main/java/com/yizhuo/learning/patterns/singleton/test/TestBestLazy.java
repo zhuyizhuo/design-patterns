@@ -6,6 +6,7 @@ import com.yizhuo.learning.patterns.singleton.lazy.BestLazy;
 
 public class TestBestLazy {
 
+	//非常无聊的情况下 用反射破坏单例
 	public static void main(String[] args) {
 		try {
 			Constructor<BestLazy> declaredConstructor = BestLazy.class.getDeclaredConstructor();
