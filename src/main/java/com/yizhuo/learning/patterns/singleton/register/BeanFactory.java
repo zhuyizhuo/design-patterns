@@ -3,6 +3,7 @@ package com.yizhuo.learning.patterns.singleton.register;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+//线程不安全
 public class BeanFactory {
 
 	private static Map<String,Object> ioc = new ConcurrentHashMap<String,Object>();
@@ -10,6 +11,7 @@ public class BeanFactory {
 	}
 	
 	public static Object getBean(String beanName){
+		//只有第一步是安全的
 		if (!ioc.containsKey(beanName)) {
 			Object newInstance = null;
 			try {
@@ -22,6 +24,7 @@ public class BeanFactory {
 		} else{
 			return ioc.get(beanName);
 		}
+		
 	}
 	
 }

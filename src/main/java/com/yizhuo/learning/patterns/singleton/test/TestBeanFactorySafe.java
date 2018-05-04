@@ -5,7 +5,6 @@ import java.util.concurrent.CountDownLatch;
 import com.yizhuo.learning.patterns.singleton.register.BeanFactory;
 
 
-//测试出BeanFactory 非线程安全  为什么? ConcurrentHashMap
 public class TestBeanFactorySafe {
 
 	public static void main(String[] args) {

@@ -11,13 +11,13 @@ public class Seriable implements Serializable{
 
 	private Seriable() {
 	}
-	public static final Seriable instance = new Seriable();
+	private static final Seriable instance = new Seriable();
 	
 	public static Seriable getInstance(){
 		return instance;
 	}
 	
-	//添加这个方法防止反射对单例造成破坏
+	//添加这个方法防止反序列化对单例造成破坏
 	private Object readResolve() {
 		return instance;
 	}

@@ -10,7 +10,7 @@ import com.yizhuo.learning.patterns.singleton.lazy.Lazy;
  * 作者: yizhuo <br>
  * 时间: 2018年5月4日 下午1:02:58
  */
-public class TestLazyThread {
+public class TestLazySafe {
 
 	public static void main(String[] args) {
 		useCountDownTest();
