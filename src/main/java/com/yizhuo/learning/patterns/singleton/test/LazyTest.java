@@ -1,4 +1,6 @@
-package com.yizhuo.learning.patterns.singleton.lazy;
+package com.yizhuo.learning.patterns.singleton.test;
+
+import com.yizhuo.learning.patterns.singleton.lazy.Lazy;
 
 public class LazyTest {
 

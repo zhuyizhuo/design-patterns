@@ -11,5 +11,14 @@ public class RegSingleton {
 		
 	}
 	
+	public static RegSingleton getInstance(String name){
+		if (name == null || name.trim().length() == 0) {
+			name = RegSingleton.class.getName();
+		}
+		if (map.get(name) == null) {
+			map.put(name, new RegSingleton());
+		}
+		return map.get(name);
+	}
 	
 }
