@@ -1,4 +1,4 @@
-package com.yizhuo.learning.patterns.prototype.deep;
+package com.yizhuo.learning.patterns.prototype.simple;
 
 import java.util.List;
 
