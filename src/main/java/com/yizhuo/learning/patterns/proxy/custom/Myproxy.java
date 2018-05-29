@@ -24,14 +24,14 @@ public class Myproxy {
                                      MyInvocationHandler h) {
         try {
             //用代码生成代码
-            String classpath = generateSrc(interfaces);
+            String classFile = generateSrc(interfaces);
 
             //文件输出到磁盘
             String filePath = Myproxy.class.getResource("").getPath();
             System.out.println(filePath);
             File f = new File(filePath + "$Proxy.java");
             FileWriter fw = new FileWriter(f);
-            fw.write(classpath);
+            fw.write(classFile);
             fw.flush();
             fw.close();
 

@@ -22,7 +22,7 @@ public class MyclassLoader extends ClassLoader {
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String className = MyclassLoader.class.getPackage().getName() + "." + name;
         if (classPathFile != null){
-            File file = new File(classPathFile, name.replaceAll("\\.", "/") + ".class");
+            File file = new File(classPathFile, name + ".class");
             if (file.exists()){
                 FileInputStream in = null;
                 ByteArrayOutputStream out = null;
@@ -59,4 +59,5 @@ public class MyclassLoader extends ClassLoader {
 
         return null;
     }
+    
 }

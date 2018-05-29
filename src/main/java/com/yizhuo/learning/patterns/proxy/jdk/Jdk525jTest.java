@@ -20,7 +20,7 @@ public class Jdk525jTest {
         byte[] $Proxy0s = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{Person.class});
 
         try {
-            FileOutputStream fo = new FileOutputStream("e:/proxy.class");
+            FileOutputStream fo = new FileOutputStream("d:/proxy.class");
             fo.write($Proxy0s);
             fo.flush();
             fo.close();
