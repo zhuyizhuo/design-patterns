@@ -42,6 +42,7 @@ public class Order {
     public void setUserId(String userId) {
         this.userId = userId;
     }
+
     public Paystate pay(PayType payType){
         return payType.get().pay(this);
     }
