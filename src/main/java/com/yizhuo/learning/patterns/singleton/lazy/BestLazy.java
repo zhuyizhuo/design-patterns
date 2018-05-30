@@ -14,6 +14,7 @@ public class BestLazy {
     //默认使用LazyThree的时候，会先初始化内部类
     //如果没使用的话，内部类是不加载的
 	private BestLazy() {
+		//此处并不能防止单例多实例  实际应用中不会有人这么无聊去故意破坏单例
 		synchronized (BestLazy.class){
             if(initialized == false){
                 initialized = !initialized;

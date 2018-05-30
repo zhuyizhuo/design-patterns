@@ -1,6 +1,5 @@
 package com.yizhuo.learning.patterns.decorator.test;
 
-import com.yizhuo.learning.patterns.decorator.old.IUserService;
 import com.yizhuo.learning.patterns.decorator.old.UserServiceImpl;
 import com.yizhuo.learning.patterns.decorator.upgrede.IThridUserService;
 import com.yizhuo.learning.patterns.decorator.upgrede.ThridUserServiceImpl;

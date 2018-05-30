@@ -5,7 +5,6 @@ public class Lazy {
 	
 	private static Lazy instance ; 
 	private Lazy() {
-		// TODO Auto-generated constructor stub
 	}	
 	
 	public static Lazy getInstance() {
