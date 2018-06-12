@@ -19,6 +19,7 @@ public class TestLazySafe {
 	}
 
 	//懒汉式单例   线程非安全测试
+	@SuppressWarnings("unused")
 	private static void test() {
 		for (int i = 0; i < 50; i++) {
 			Thread thread = new Thread() {

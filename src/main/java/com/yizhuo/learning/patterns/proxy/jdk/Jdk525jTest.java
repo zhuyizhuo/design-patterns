@@ -1,17 +1,18 @@
 package com.yizhuo.learning.patterns.proxy.jdk;
 
-import com.yizhuo.learning.patterns.proxy.Person;
-import sun.misc.ProxyGenerator;
-
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+
+import com.yizhuo.learning.patterns.proxy.Person;
+
+import sun.misc.ProxyGenerator;
 
 /**
  * Created by yizhuo on 2018/5/6.
  */
+@SuppressWarnings("restriction")
 public class Jdk525jTest {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         Jdk525j jdk525j = new Jdk525j();
 
         //此处一定是接口

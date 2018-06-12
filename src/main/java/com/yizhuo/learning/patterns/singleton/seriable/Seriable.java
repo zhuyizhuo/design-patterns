@@ -9,6 +9,8 @@ import java.io.Serializable;
  */
 public class Seriable implements Serializable{
 
+	private static final long serialVersionUID = 1L;
+
 	private Seriable() {
 	}
 	private static final Seriable instance = new Seriable();

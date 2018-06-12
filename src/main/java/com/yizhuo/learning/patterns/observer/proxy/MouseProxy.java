@@ -15,9 +15,10 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by yizhuo on 2018/5/30.
  */
+@SuppressWarnings("rawtypes")
 public class MouseProxy extends EventLister implements MethodInterceptor{
 
-    private static Map<String,Enum> m = new ConcurrentHashMap();
+	private static Map<String,Enum> m = new ConcurrentHashMap<String, Enum>();
     static {
         m.put("onClick", MouseEventType.ON_CLICK);
         m.put("onDoubleClick",MouseEventType.ON_DOUBLE_CLICK);

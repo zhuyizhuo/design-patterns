@@ -6,10 +6,11 @@ import java.util.List;
 /**
  * Created by yizhuo on 2018/5/5.
  */
+@SuppressWarnings({"rawtypes","unchecked"})
 public class Person implements Cloneable{
     private String name;
     private Book book;
-    private List clothes;
+	private List clothes;
 
     public List getClothes() {
         return clothes;
@@ -35,7 +36,7 @@ public class Person implements Cloneable{
         this.book = book;
     }
 
-    @Override
+	@Override
     protected Object clone() throws CloneNotSupportedException {
 
         Person clone = (Person)super.clone();

@@ -5,10 +5,11 @@ import java.util.ArrayList;
 /**
  * Created by yizhuo on 2018/5/5.
  */
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class PersonTest {
 
     //深复制
-    public static void main(String[] args) throws CloneNotSupportedException {
+	public static void main(String[] args) throws CloneNotSupportedException {
 
         Person p = new Person();
         p.setName("abc");

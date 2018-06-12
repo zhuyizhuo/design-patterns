@@ -21,7 +21,8 @@ public class CglibMeipo implements MethodInterceptor{
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("我是媒婆 我帮你找对象");
 
-        Object o1 = methodProxy.invokeSuper(o, objects);
+        @SuppressWarnings("unused")
+		Object o1 = methodProxy.invokeSuper(o, objects);
 
         System.out.println("安排见面");
         return null;

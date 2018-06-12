@@ -5,11 +5,12 @@ import java.util.List;
 /**
  * Created by yizhuo on 2018/5/5.
  */
+@SuppressWarnings("rawtypes")
 public class Prototype implements Cloneable{
 
     private String name;
 
-    private List test;
+	private List test;
 
     public List getTest() {
         return test;

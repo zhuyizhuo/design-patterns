@@ -1,7 +1,6 @@
 package com.yizhuo.learning.patterns.proxy.jdk;
 
 import com.yizhuo.learning.patterns.proxy.Person;
-import com.yizhuo.learning.patterns.proxy.staticed.Entrepreneur;
 
 /**
  * Created by yizhuo on 2018/5/6.

@@ -1,25 +1,24 @@
 package com.yizhuo.learning.patterns.proxy.custom;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
 import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 /**
  * Created by yizhuo on 2018/5/6.
  */
+@SuppressWarnings("restriction")
 public class Myproxy {
 
     private static String ln = "\r\n";
 
-    public static Object getInstance(MyclassLoader loader,
+	public static Object getInstance(MyclassLoader loader,
                                      Class<?>[] interfaces,
                                      MyInvocationHandler h) {
         try {

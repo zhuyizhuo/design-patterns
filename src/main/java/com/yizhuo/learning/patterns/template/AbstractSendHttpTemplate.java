@@ -14,7 +14,8 @@ public abstract class AbstractSendHttpTemplate {
      */
     abstract Object decryption();
 
-    protected Object SendHttpRequest(){
+    @SuppressWarnings("unused")
+	protected Object SendHttpRequest(){
         Object encryption = encryption();
 
         //to do send http;

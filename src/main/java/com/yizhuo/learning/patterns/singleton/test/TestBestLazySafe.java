@@ -3,7 +3,6 @@ package com.yizhuo.learning.patterns.singleton.test;
 import java.util.concurrent.CountDownLatch;
 
 import com.yizhuo.learning.patterns.singleton.lazy.BestLazy;
-import com.yizhuo.learning.patterns.singleton.lazy.Lazy;
 
 /**
  * 类: LazyTestThread <br>

@@ -7,9 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by yizhuo on 2018/5/30.
  */
+@SuppressWarnings("rawtypes")
 public class EventLister {
     //时间注册器
-    protected Map<Enum,Event> events = new ConcurrentHashMap<Enum, Event>();
+	protected Map<Enum,Event> events = new ConcurrentHashMap<Enum, Event>();
 
     public void addLister(Enum eventType,Object target,Method callback){
         this.addLister(eventType,target,callback,null);

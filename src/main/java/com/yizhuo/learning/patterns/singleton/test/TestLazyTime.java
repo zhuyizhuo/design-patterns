@@ -3,6 +3,7 @@ package com.yizhuo.learning.patterns.singleton.test;
 import com.yizhuo.learning.patterns.singleton.lazy.BestLazy;
 import com.yizhuo.learning.patterns.singleton.lazy.LazyThreadSafe;
 
+@SuppressWarnings("unused")
 public class TestLazyTime {
 
 	public static void main(String[] args) {
