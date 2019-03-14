@@ -1,5 +1,6 @@
 package com.yizhuo.learning.patterns.observer.mouse;
 
+import com.alibaba.fastjson.JSON;
 import com.yizhuo.learning.patterns.observer.core.Event;
 
 /**
@@ -8,7 +9,7 @@ import com.yizhuo.learning.patterns.observer.core.Event;
 public class MouseEventCallBack {
 
     public void onClick(Event e) {
-        System.out.println("====MouseEventCallBack Mouse onClick====\n" + e);
+        System.out.println("====MouseEventCallBack Mouse onClick====\n" + JSON.toJSONString(e));
     }
 
     public void onDoubleClick(Event e) {
