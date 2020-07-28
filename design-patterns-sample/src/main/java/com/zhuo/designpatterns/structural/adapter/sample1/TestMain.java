@@ -24,34 +24,3 @@ public class TestMain {
     }
 }
 
-/**
- * 目标接口
- *
- * @author zhuo
- */
-interface Target {
-    void sampleOperation1();
-
-    void sampleOperation2();
-}
-
-/**
- * 源
- *
- * @author zhuo
- */
-class Adaptee {
-    public void sampleOperation1() {
-    }
-}
-
-/**
- * 适配器类
- *
- * @author zhuo
- */
-class Adapter extends Adaptee implements Target {
-    @Override
-    public void sampleOperation2() {
-    }
-}

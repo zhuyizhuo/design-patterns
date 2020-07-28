@@ -4,24 +4,24 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
- *
+ * 快递公司
  * @author zhuo
  * @date 2018/5/29
  */
-public class ExpressCompany implements ExpressDelivery {
-    private static Map<String,ExpressDelivery> m = new HashMap<String,ExpressDelivery>();
+public class ExpressCompany implements Courier {
+    private static Map<String, Courier> courierMap = new HashMap<String, Courier>();
 
     static {
-        m.put("朝阳",new CourierA());
-        m.put("海淀",new CourierB());
+        courierMap.put("朝阳",new CourierA());
+        courierMap.put("海淀",new CourierB());
     }
 
     @Override
-    public void sendExpress(String sendTo) {
-        ExpressDelivery expressDelivery = m.get(sendTo);
-        if (expressDelivery == null){
+    public void sendExpress(String sendTo, ExpressDelivery expressDelivery) {
+        Courier courier = courierMap.get(sendTo);
+        if (courier == null){
             return;
         }
-        expressDelivery.sendExpress(sendTo);
+        courier.sendExpress(sendTo, expressDelivery);
     }
 }
