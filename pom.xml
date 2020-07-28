@@ -2,7 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yizhuo</groupId>
   <artifactId>designPatterns</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>0.0.2-SNAPSHOT</version>
+    <modules>
+        <module>design-patterns-sample</module>
+    </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
