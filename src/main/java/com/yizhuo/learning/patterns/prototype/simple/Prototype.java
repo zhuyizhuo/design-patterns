@@ -3,7 +3,9 @@ package com.yizhuo.learning.patterns.prototype.simple;
 import java.util.List;
 
 /**
- * Created by yizhuo on 2018/5/5.
+ *
+ * @author yizhuo
+ * @date 2018/5/5
  */
 @SuppressWarnings("rawtypes")
 public class Prototype implements Cloneable{

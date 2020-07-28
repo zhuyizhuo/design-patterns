@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by yizhuo on 2018/5/5.
+ *
+ * @author yizhuo
+ * @date 2018/5/5
  */
 @SuppressWarnings({"rawtypes","unchecked"})
 public class Person implements Cloneable{

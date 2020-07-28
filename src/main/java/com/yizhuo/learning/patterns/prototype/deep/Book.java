@@ -1,7 +1,9 @@
 package com.yizhuo.learning.patterns.prototype.deep;
 
 /**
- * Created by yizhuo on 2018/5/5.
+ *
+ * @author yizhuo
+ * @date 2018/5/5
  */
 public class Book implements Cloneable{
 

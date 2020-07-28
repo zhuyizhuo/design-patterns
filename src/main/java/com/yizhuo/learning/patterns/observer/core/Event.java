@@ -3,7 +3,9 @@ package com.yizhuo.learning.patterns.observer.core;
 import java.lang.reflect.Method;
 
 /**
- * Created by yizhuo on 2018/5/30.
+ *
+ * @author yizhuo
+ * @date 2018/5/30
  */
 public class Event {
     //事件源

@@ -3,12 +3,15 @@ package com.yizhuo.learning.patterns.prototype.simple;
 import java.util.ArrayList;
 
 /**
- * Created by yizhuo on 2018/5/5.
+ *
+ * @author yizhuo
+ * @date 2018/5/5
  */
-@SuppressWarnings({ "rawtypes", "unchecked" })
 public class PrototypeTest {
 
-    //浅复制  引用类型没有复制
+    /**
+     *  浅复制  引用类型没有复制
+     */
 	public static void main(String[] args) throws CloneNotSupportedException {
         Prototype p = new Prototype();
         p.setName("123456");
@@ -23,4 +26,5 @@ public class PrototypeTest {
         System.out.println(clone.getTest());
         System.out.println("浅复制 list相等;" +(p.getTest() == clone.getTest()));
     }
+
 }

@@ -13,7 +13,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by yizhuo on 2018/5/30.
+ *
+ * @author yizhuo
+ * @date 2018/5/30
  */
 @SuppressWarnings("rawtypes")
 public class MouseProxy extends EventLister implements MethodInterceptor{

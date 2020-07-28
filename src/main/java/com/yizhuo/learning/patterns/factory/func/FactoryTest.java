@@ -2,6 +2,9 @@ package com.yizhuo.learning.patterns.factory.func;
 
 import com.yizhuo.learning.patterns.factory.Computer;
 
+/**
+ * @author zhuo
+ */
 public class FactoryTest {
 
 	public static void main(String[] args) {

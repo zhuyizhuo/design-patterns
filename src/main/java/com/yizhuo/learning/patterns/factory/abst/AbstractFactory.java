@@ -2,6 +2,9 @@ package com.yizhuo.learning.patterns.factory.abst;
 
 import com.yizhuo.learning.patterns.factory.Computer;
 
+/**
+ * @author zhuo
+ */
 public abstract class AbstractFactory {
 
 	public abstract Computer getDell();

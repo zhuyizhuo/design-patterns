@@ -6,6 +6,9 @@ import com.yizhuo.learning.patterns.factory.Hp;
 import com.yizhuo.learning.patterns.factory.Lenovo;
 import com.yizhuo.learning.patterns.factory.ThinkPad;
 
+/**
+ * @author zhuo
+ */
 public class SimpleFactory {
 
 	public Computer getComputer(String name){

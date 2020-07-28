@@ -1,7 +1,9 @@
 package com.yizhuo.learning.patterns.adapter;
 
 /**
- * Created by yizhuo on 2018/5/29.
+ * 适配器模式
+ * @author yizhuo
+ * @date 2018/5/29
  */
 public class TestAdapter {
     public static void main(String[] args) {

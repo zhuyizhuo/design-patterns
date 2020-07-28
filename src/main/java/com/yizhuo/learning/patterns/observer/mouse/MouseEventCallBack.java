@@ -4,7 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.yizhuo.learning.patterns.observer.core.Event;
 
 /**
- * Created by yizhuo on 2018/5/30.
+ *
+ * @author yizhuo
+ * @date 2018/5/30
  */
 public class MouseEventCallBack {
 

@@ -1,7 +1,9 @@
 package com.yizhuo.learning.patterns.decorator.old;
 
 /**
- * Created by yizhuo on 2018/5/29.
+ *
+ * @author yizhuo
+ * @date 2018/5/29
  */
 public class UserInfo {
     private String name;
