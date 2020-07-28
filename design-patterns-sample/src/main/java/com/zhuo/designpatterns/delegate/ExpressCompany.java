@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author yizhuo
+ * @author zhuo
  * @date 2018/5/29
  */
 public class ExpressCompany implements ExpressDelivery {
@@ -16,6 +16,7 @@ public class ExpressCompany implements ExpressDelivery {
         m.put("海淀",new CourierB());
     }
 
+    @Override
     public void sendExpress(String sendTo) {
         ExpressDelivery expressDelivery = m.get(sendTo);
         if (expressDelivery == null){

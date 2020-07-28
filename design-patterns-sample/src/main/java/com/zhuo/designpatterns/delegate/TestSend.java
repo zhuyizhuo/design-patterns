@@ -2,7 +2,7 @@ package com.zhuo.designpatterns.delegate;
 
 /**
  *
- * @author yizhuo
+ * @author zhuo
  * @date 2018/5/29
  */
 public class TestSend {
