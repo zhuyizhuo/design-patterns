@@ -47,4 +47,5 @@ local.properties
 .springBeans
 /target
 .idea
-designPatterns.iml
+*.iml
+**/*.iml
