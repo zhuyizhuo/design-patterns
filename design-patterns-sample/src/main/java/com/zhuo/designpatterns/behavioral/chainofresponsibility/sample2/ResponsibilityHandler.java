@@ -1,5 +1,8 @@
 package com.zhuo.designpatterns.behavioral.chainofresponsibility.sample2;
 
+/**
+ * @author zhuo
+ */
 public class ResponsibilityHandler implements Handler {
 
 	private Handler handler;
@@ -19,9 +22,9 @@ public class ResponsibilityHandler implements Handler {
 	@Override
 	public void handleRequest(Boy boy) {
 		if (boy.isHasResponsibility()) {
-			System.out.println("我只有一颗带Responsibility的心");
+			System.out.println("我有责任心");
 		} else {
-			System.out.println("更没有责任心");
+			System.out.println("我没有责任心");
 			handler.handleRequest(boy);
 		}
 	}
