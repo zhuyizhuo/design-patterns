@@ -45,11 +45,6 @@ public class Test {
 	}
 }
 
-abstract class AbstractChatroom{
-	public abstract void Register(Participant participant);
-	public abstract void Send(String from, String to, String message);
-}
-
 class Chatroom extends AbstractChatroom{
 
 	private Hashtable participants = new Hashtable();
