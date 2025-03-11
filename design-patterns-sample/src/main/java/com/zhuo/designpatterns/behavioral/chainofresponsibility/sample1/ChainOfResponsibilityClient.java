@@ -28,9 +28,9 @@ package com.zhuo.designpatterns.behavioral.chainofresponsibility.sample1;
 public class ChainOfResponsibilityClient {
 
     public static void main(String[] args) {
-        Handler handler1 = new ConcreteHandler();
-        Handler handler2 = new ConcreteHandler();
+        Handler handler1 = new ConcreteHandler("1号");
+        Handler handler2 = new ConcreteHandler("2号");
         handler1.setSuccessor(handler2);
-        handler1.handleRequest(new Request("Negative Value",-1));
+        handler1.handleRequest(new Request("具体请求",-1));
     }
 }

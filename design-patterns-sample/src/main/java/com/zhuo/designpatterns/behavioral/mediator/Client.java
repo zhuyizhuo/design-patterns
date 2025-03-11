@@ -24,7 +24,7 @@ package com.zhuo.designpatterns.behavioral.mediator;
  * @author zhuo
  * 
  */
-public class Test {
+public class Client {
 	public static void main(String[] args) {
 		Chatroom chatroom = new Chatroom();
 		Participant George = new Boy("George");

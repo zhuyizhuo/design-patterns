@@ -28,7 +28,7 @@ package com.zhuo.designpatterns.behavioral.interpreter;
 
  * @author zhuo
  */
-public class Test {
+public class InterpreterClient {
     private static Expression ex;
 
     private static Context con;

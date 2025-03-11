@@ -23,7 +23,7 @@ package com.zhuo.designpatterns.behavioral.chainofresponsibility.sample2;
 
  * @author zhuo
  */
-public class Girl {
+public class Client {
 
 	public static void main(String[] args) {
 		/** 这个 boy 没有车，也没有房，不过很有责任心 */

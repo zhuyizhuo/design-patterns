@@ -13,7 +13,7 @@ public class InCommand implements CommandInterface {
 	  */
 	 @Override
 	 public void execute() {
-	    System.out.println("int command");
+	    System.out.println("in command");
 	 }
 
 }
