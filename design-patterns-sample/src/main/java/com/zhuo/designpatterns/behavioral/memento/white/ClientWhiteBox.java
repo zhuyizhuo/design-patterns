@@ -30,7 +30,9 @@ public class ClientWhiteBox {
         o.setState("ON");
         c.saveMemento(o.CreateMemento());
         o.setState("OFF");
+        System.out.println("Current state:" + o.getState());
         o.restoreMemento(c.retrieveMemento());
+        System.out.println("restore state:" + o.getState());
     }
 } 
 
